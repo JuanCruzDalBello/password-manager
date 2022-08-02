@@ -39,19 +39,19 @@ Takes input from the user to get a user and a password, if any of the two happen
 
 If both the username and the password are valid the program shows the data to the user before it is saved and ask him if it is correct. If so then the password is encrypted and both are written on the passwords.txt file.
 
-### encrypt(string)
+### encrypt(string) -> bytes
 Encrypts a given string using the Fernet class from the cryptography module, and returns it as a bytes type.
 
-### decrypt(string)
+### decrypt(string) -> string
 Decrypts an encrypted password and returns the result as a string.
 
-### valid(string)
+### valid(string) -> bool
 Checks if a string is valid as a username or password. It is considered valid if it does not have spaces and it is not an empty string. Returns True if the data is valid or False otherwise.
 
-### pwd_file_created()
+### pwd_file_created() -> bool
 Returns True if the passswords.txt file is on the current directory, or False otherwise.
 
-### correct_master_pwd(string)
+### correct_master_pwd(string) -> bool
 Returns True if the given password is the same as the one stored on the master_password.txt file, or False otherwise.
 
 ### generate_master_pwd()
@@ -60,5 +60,5 @@ Creates the master_password.txt file and prompts the user for a master pasword t
 ### generate_key()
 Generates the key.txt file and writes a key on it, using the method generate_key() from the Fernet class.
 
-### get_key()
+### get_key() -> string
 Opens the key.txt file and returns the key stored on it.
