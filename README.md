@@ -4,6 +4,7 @@ This program is purely for demostration purposes, should not replace a professio
 
 ## USAGE
 python password_mgr.py
+The first time the program is executed, the files key.txt and master_password.txt will be created.
 
 Prompts the user for an input:
     a: add data.
@@ -17,7 +18,7 @@ The user is asked for a username and a password.
 A table is shown with each username and its password.
 
 
-## FILES
+## ADDITIONAL FILES
 ### passwords.txt
 Stores the usernames and passwords.
 
